@@ -1,0 +1,114 @@
+* {
+    outline: 1px solid #555;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: #fff; */
+    z-index: 999;
+    background: #fff;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+.header .inner a img {
+    width: 200px;
+
+}
+
+.header .gnb {
+    margin: 0 0 0 auto;
+}
+
+.header .gnb>ul {
+    display: flex;
+    gap: 40px
+}
+
+.header .search {
+    margin: 0 0 0 10px;
+}
+
+.header .search i {
+    font-size: 30px;
+}
+
+/* ㅡㅡㅡㅡㅡmain 슬라이드ㅡㅡㅡㅡㅡ */
+.main_visual {
+    position: relative;
+
+}
+
+
+.main_visual .main_slide figure {
+    position: relative;
+    height: 900px;
+}
+
+.main_visual .main_slide .itm01 {
+    background: url(../images/car_slide01.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm02 {
+    background: url(../images/car_slide02.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm03 {
+    background: url(../images/car_slide03.jpg) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .itm04 {
+    background: url(../images/car_slide04.png) no-repeat center center/cover;
+}
+
+.main_visual .main_slide .slogan {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    padding: 0 15px;
+}
+
+.main_visual .main_slide .slogan strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-size: 70px;
+    font-weight: 800;
+    color: #002c5f;
+    text-shadow: 0 0 3px rgba(255, 255, 255, 0.3);
+
+}
+
+.main_visual .main_slide .slogan p {
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    font-weight: 300;
+    color: #fff;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.main_visual .main_slide .slogan .txt04 {
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+}
+
+.main_visual .main_slide .slogan a {
+    float: right;
+    display: inline-block;
+    background: #002c5f;
+    color: #fff;
+    padding: 3px 12px 5px 12px;
+}
