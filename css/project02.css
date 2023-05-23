@@ -1,9 +1,13 @@
-* {
+/* * {
     outline: 1px solid #555;
-}
+} */
 
 body {
     min-height: 150vh;
+}
+
+section {
+    padding: 0 0 30px 0;
 }
 
 .inner {
@@ -73,8 +77,10 @@ body {
     font-size: 0;
     width: 100px;
     height: 100px;
-    border-left: 3px solid rgba(255, 255, 255, 0.3);
-    border-top: 3px solid rgba(255, 255, 255, 0.3);
+    border-left: 3px solid rgba(255, 255, 255, 0.5);
+    border-top: 3px solid rgba(255, 255, 255, 0.5);
+    
+
 }
 
 .main_visual .slick-prev {
@@ -191,22 +197,26 @@ body {
     background: url(../images/car-bg-w.jpg) no-repeat center center/cover;
 }
 
-.product_visual figure {
+.product_visual .car_tit {
     position: relative;
     height: 800px;
     overflow: hidden;
 }
 
-.product_visual .slogan {
+.product_visual .car_tit .slogan {
+    position: absolute;
     text-align: center;
-    top: 100px;
+    top: 200px;
+    left: 45%;
+    padding: 0;
 }
+
 
 .product_visual .product_slide .car_tit .slogan h2 {
     font-size: 40px;
     font-weight: 700;
     margin: 0 0 20px 0;
-    color: #333;
+    color: #002c5f;
 }
 
 .product_visual .slogan p {
@@ -220,17 +230,94 @@ body {
     left: 50%;
     width: 1200px;
     transform: translate(150%, -50%);
-    transition: 1s 0.5s;
+    transition: 0.7s 0.5s;
 }
 
 .product_visual figure.on .car {
+    
     transform: translate(-50%, -50%);
 }
 
+/* 버튼 */
+.product_slide .slick-dots {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.product_slide .slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+
+}
+
+.product_slide .slick-dots>* {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.product_slide .slick-dots button {
+    background: #002c5f;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+.product_slide .slick-dots .slick-active button {
+    background: #777;
+}
+
+
+
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 3 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+.bg00{
+    filter: grayscale(0.5);
+    height: 400px;
+    background-image: url(../images/background01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg00 .inner h2{
+    color: #fff;
+    font-size: 95px;
+    font-weight: 100;
+    
+}
+
+
+
+
 .content {
+    height: 900px;
+    padding: 160px 0 0 0;
     background: #fff;
+}
+
+.content .tit{
+text-align: center;
+}
+
+.content .tit h2{
+    color: #002c5f;
+    margin: 0 0 25px 0;
+    font-size: 40px;
+    font-weight: 800;
+}
+.content .tit p{
+    margin: 0 0 20px 0;
+    font-size: 15px;
+    font-weight: 300;
+
 }
 
 .content .con {
@@ -247,6 +334,7 @@ body {
     overflow: hidden;
 }
 
+/* 이미지 효과 */
 .content .con figure img {
     transition: 0.5s;
 }
@@ -255,7 +343,7 @@ body {
     transform: scale(1.2);
 }
 
-.content .cover {
+.content .con figure .cover {
     position: absolute;
     inset: 0 auto auto 100%;
 
@@ -267,24 +355,59 @@ body {
     /* .content .cover a (more)위치 아래로 내리기 */
     display: flex;
     flex-direction: column;
-
-    background: rgba(12, 76, 163, 0.5);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.3);
     color: #fff;
     padding: 50px 30px;
-
-
 }
 
-.content .cover a {
-    background: #333;
+.content .con figure .cover h3{
+    margin: 0 0 55px 0;
+    font-size: 28px;
+    font-weight: 500;
+} 
+.content .con figure .cover p{
+    font-size: 15px;
+    font-weight: 300;
+} 
+
+.content .con figure .cover a {
+    background: #002c5f;
     padding: 5px 10px;
     margin: auto 0 0 0;
-    align-self: flex-start;
+    align-self: center;
 }
 
 .content figure:hover .cover {
     inset: 0 auto auto 0;
 }
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 4ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.bg00{
+    filter: grayscale(0.5);
+    height: 400px;
+    background-image: url(../images/background01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* .bg00 .inner h2{
+    color: #fff;
+    font-size: 80px;
+    font-weight: 900;
+    
+} */
+
+.bg01 {
+    height: 400px;
+    background:#fff
+}
+
 
 
 

@@ -6,7 +6,7 @@ $(function () {
         //vertical: true,
         dots: true,
         autoplay: true,
-        autoplaySpeed: 4500,
+        autoplaySpeed: 4000,
         pauseOnHover: false,
         pauseOnFocus: false,
     });
@@ -29,7 +29,7 @@ $(function () {
         arrows: false,
         autoplay: true,
         dots: true,
-        autoplaySpeed: 5000,
+        autoplaySpeed: 4000,
         pauseOnHover: false,
     });
 
