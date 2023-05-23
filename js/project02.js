@@ -14,25 +14,36 @@ $(function () {
 
 //section2 제품 슬라이드
 $(function () {
+
+    const model = ['ioniq', 'casper', 'sonata']
+
+    $('.product_slide').on('init afterChange', function (e, s, c) {
+        let _this = $(this).find('.slick-current');
+        _this.addClass('on').siblings().removeClass('on');
+
+
+    });
+
+
     $('.product_slide').slick({
         arrows: false,
+        autoplay: true,
         dots: true,
-        slidesToShow: 1,
-        responsive: [
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                }
-            },
-        ]
+        autoplaySpeed: 5000,
+        pauseOnHover: false,
     });
 
-    $('#product .arrows .left').on('click', function () {
-        $('.product_slide').slick('slcikPrev');
+    //모델명 클릭하면 다음 페이지로 넘어가는 버튼
+    $('.product_visual .model').on('click', function () {
+        $('.product_slide').slick('slickNext');
+    });
+
+});
+
+
+// 위로 올라가는 버튼
+$(function () {
+    $('.to_top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 500);
     })
-    $('#product .arrows .right').on('click', function () {
-        $('.product_slide').slick('slcikNext');
-    });
-
 })
