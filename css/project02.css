@@ -6,9 +6,7 @@ body {
     min-height: 150vh;
 }
 
-section {
-    padding: 0 0 30px 0;
-}
+section {}
 
 .inner {
     max-width: 1200px;
@@ -79,7 +77,7 @@ section {
     height: 100px;
     border-left: 3px solid rgba(255, 255, 255, 0.5);
     border-top: 3px solid rgba(255, 255, 255, 0.5);
-    
+
 
 }
 
@@ -99,7 +97,7 @@ section {
 
 .main_visual .slick-dots {
     position: absolute;
-    bottom: 50px;
+    bottom: 150px;
     left: 50%;
     transform: translate(-50%, 0);
 }
@@ -134,7 +132,7 @@ section {
 
 .main_visual .main_slide figure {
     position: relative;
-    height: 900px;
+    height: 100vh;
 }
 
 .main_visual .main_slide .itm01 {
@@ -192,35 +190,36 @@ section {
 /* ㅡㅡㅡㅡㅡㅡsection 2 제품 슬라이드ㅡㅡㅡㅡㅡㅡㅡ */
 .product_visual {
     position: relative;
-
-    height: 900px;
     background: url(../images/car-bg-w.jpg) no-repeat center center/cover;
 }
 
-.product_visual .car_tit {
+.product_visual .product_slide .car_tit {
     position: relative;
-    height: 800px;
+    height: 100vh;
     overflow: hidden;
 }
 
 .product_visual .car_tit .slogan {
     position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     text-align: center;
-    top: 200px;
-    left: 45%;
+    /* top: 230px;
+    left: 50%; */
     padding: 0;
 }
 
 
 .product_visual .product_slide .car_tit .slogan h2 {
     font-size: 40px;
-    font-weight: 700;
+    font-weight: 800;
     margin: 0 0 20px 0;
     color: #002c5f;
 }
 
 .product_visual .slogan p {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 300;
 }
 
@@ -234,7 +233,7 @@ section {
 }
 
 .product_visual figure.on .car {
-    
+
     transform: translate(-50%, -50%);
 }
 
@@ -249,7 +248,7 @@ section {
 .product_slide .slick-dots {
     text-align: center;
     margin: 20px 0 0 0;
-
+    bottom: 150px;
 }
 
 .product_slide .slick-dots>* {
@@ -277,7 +276,7 @@ section {
 
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 3 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
-.bg00{
+.bg00 {
     filter: grayscale(0.5);
     height: 400px;
     background-image: url(../images/background01.jpg);
@@ -287,35 +286,38 @@ section {
     background-attachment: fixed;
 }
 
-.bg00 .inner h2{
+.bg00 .inner h2 {
     color: #fff;
     font-size: 95px;
     font-weight: 100;
-    
+
 }
 
 
 
 
 .content {
-    height: 900px;
-    padding: 160px 0 0 0;
+    justify-content: center;
+    height: 100vh;
+    padding: 250px 0 0 0;
     background: #fff;
+
 }
 
-.content .tit{
-text-align: center;
+.content .tit {
+    text-align: center;
 }
 
-.content .tit h2{
+.content .tit h2 {
     color: #002c5f;
     margin: 0 0 25px 0;
     font-size: 40px;
     font-weight: 800;
 }
-.content .tit p{
+
+.content .tit p {
     margin: 0 0 20px 0;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: 300;
 
 }
@@ -356,20 +358,25 @@ text-align: center;
     display: flex;
     flex-direction: column;
     text-align: center;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(201, 201, 201, 0.3);
     color: #fff;
+
     padding: 50px 30px;
 }
 
-.content .con figure .cover h3{
-    margin: 0 0 55px 0;
+.content .con figure .cover h3 {
+    display: block;
+    padding: 60px 0 50px 0;
     font-size: 28px;
-    font-weight: 500;
-} 
-.content .con figure .cover p{
+    font-weight: 600;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.content .con figure .cover p {
     font-size: 15px;
-    font-weight: 300;
-} 
+    font-weight: 400;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
 
 .content .con figure .cover a {
     background: #002c5f;
@@ -386,7 +393,7 @@ text-align: center;
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 4ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
-.bg00{
+.bg00 {
     filter: grayscale(0.5);
     height: 400px;
     background-image: url(../images/background01.jpg);
@@ -403,10 +410,10 @@ text-align: center;
     
 } */
 
-.bg01 {
+/* .bg01 {
     height: 400px;
-    background:#fff
-}
+    background: #fff
+} */
 
 
 
@@ -427,4 +434,135 @@ text-align: center;
     padding: 10px;
     cursor: pointer;
     border-radius: 50%;
+}
+
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 5 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.main_event {
+    height: 100vh;
+}
+
+.tit {
+    text-align: center;
+    padding: 100px 0 0 0;
+}
+
+.tit h2 {
+    font-size: 40px;
+    font-weight: 800;
+    color: #002c5f;
+    margin: 0 0 15px 0;
+}
+
+.tit p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.event {
+    position: relative;
+    padding: 50px 0;
+}
+
+.sc07 .inner>li::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background: tomato;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 라벨 */
+.sc07 .inner>li::after {
+    content: "new";
+    position: absolute;
+    right: -20px;
+    bottom: 50px;
+    border-top: 10px solid tomato;
+    border-bottom: 10px solid tomato;
+    border-left: 20px solid tomato;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 60px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    /* 라벨 안에 글자 위치 조정 법 */
+    line-height: 0;
+    text-indent: -10px;
+}
+
+
+.sc07 .inner {
+    position: relative;
+    display: grid;
+    /* 한 칸씩 차지하게 하는 법 */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* 반응형으로 한 칸씩 차지하게 하는 법 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sc07 .inner h2 {
+    margin: 0 0 15px 0;
+}
+
+.sc07 .inner h3 {
+    margin: 0 0 15px 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sc07 .inner p {
+    font-size: 15px;
+    font-weight: 400;
+    text-align: center;
+    word-break: keep-all;
+}
+
+.sc07 .inner .step01 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event01.jpg) no-repeat center center/cover;
+}
+
+.sc07 .inner .step02 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event02.jpg) no-repeat center center/cover;
+}
+
+.sc07 .inner .step03 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event03.jpg) no-repeat center center/cover;
+}
+
+.sc07 .inner .step04 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event04.jpg) no-repeat center center/cover;
+}
+
+.sc07 .inner .step05 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event05.jpg) no-repeat center center/cover;
+}
+
+.sc07 .inner .step06 h2 {
+    width: 100%;
+    height: 250px;
+    background: url(../images/event06.jpg) no-repeat center center/cover;
 }
