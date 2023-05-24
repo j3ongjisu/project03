@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px solid #555;
-} */
+}
 
 body {
     min-height: 150vh;
@@ -114,19 +114,19 @@ section {}
 }
 
 .main_visual .slick-dots li button {
-    background: #002c5f;
-    color: white;
-    border-radius: 50%;
-    padding: 5px;
+    background: rgba(0, 44, 95, 0.8);
+    color: rgba(255, 255, 255,0);
+    border-radius: 1px;
+    padding: 3px;
     font-size: 10px;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 4px;
     border: none;
     outline: none;
 }
 
 .main_visual .slick-dots li.slick-active button {
-    background: #777;
+    background: #fff;
 }
 
 
@@ -257,19 +257,19 @@ section {}
 }
 
 .product_slide .slick-dots button {
-    background: #002c5f;
-    color: white;
-    border-radius: 50%;
-    padding: 5px;
+    background: rgba(0, 45, 95,0.8);
+    color: rgba(255, 255, 255, 0);
+    border-radius: 1px;
+    padding: 3px;
     font-size: 10px;
-    width: 20px;
-    height: 20px;
+    width: 50px;
+    height: 4px;
     border: none;
     outline: none;
 }
 
 .product_slide .slick-dots .slick-active button {
-    background: #777;
+    background: #fff;
 }
 
 
@@ -290,18 +290,13 @@ section {}
     color: #fff;
     font-size: 95px;
     font-weight: 100;
-
 }
-
-
-
 
 .content {
     justify-content: center;
     height: 100vh;
     padding: 250px 0 0 0;
     background: #fff;
-
 }
 
 .content .tit {
@@ -442,18 +437,19 @@ section {}
 
 .main_event {
     height: 100vh;
+    
 }
 
 .tit {
     text-align: center;
-    padding: 100px 0 0 0;
+    padding: 130px 0 30px 0;
 }
 
 .tit h2 {
     font-size: 40px;
     font-weight: 800;
     color: #002c5f;
-    margin: 0 0 15px 0;
+    margin: 0 0 30px 0;
 }
 
 .tit p {
@@ -463,7 +459,7 @@ section {}
 
 .event {
     position: relative;
-    padding: 50px 0;
+    padding: 30px 0 50px 0;
 }
 
 .sc07 .inner>li::before {
@@ -477,26 +473,6 @@ section {}
     border-radius: 5px;
 }
 
-/* 라벨 */
-.sc07 .inner>li::after {
-    content: "new";
-    position: absolute;
-    right: -20px;
-    bottom: 50px;
-    border-top: 10px solid tomato;
-    border-bottom: 10px solid tomato;
-    border-left: 20px solid tomato;
-    border-right: 5px solid transparent;
-    height: 0;
-    width: 60px;
-    color: #fff;
-    font-size: 10px;
-    text-transform: uppercase;
-
-    /* 라벨 안에 글자 위치 조정 법 */
-    line-height: 0;
-    text-indent: -10px;
-}
 
 
 .sc07 .inner {
@@ -514,8 +490,34 @@ section {}
 }
 
 .sc07 .inner h2 {
-    margin: 0 0 15px 0;
+    margin: 0 0 15px 0;  
 }
+/* 테두리 안 됨 */
+.sc07 .inner h2 .cover::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 0%;
+        height: 0%;
+    
+        border-top: 1px solid rgb(12, 76, 163);
+        border-left: 1px solid #0c4ca3;
+    
+        visibility: hidden;
+    
+        transition: 0.5s;
+}
+
+.sc07 .inner h2 .cover:hover::before{
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+    
 
 .sc07 .inner h3 {
     margin: 0 0 15px 0;
