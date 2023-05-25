@@ -279,7 +279,7 @@ body {
 
 /*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 3 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 .bg00 {
-    filter: grayscale(0.5);
+    /* filter: grayscale(0); */
     height: 400px;
     background-image: url(../images/background01.jpg);
     background-repeat: no-repeat;
