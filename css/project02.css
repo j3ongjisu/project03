@@ -1,12 +1,10 @@
-* {
+/* * {
     outline: 1px solid #555;
-}
+} */
 
 body {
     min-height: 150vh;
 }
-
-section {}
 
 .inner {
     max-width: 1200px;
@@ -22,6 +20,7 @@ section {}
     /* background: #fff; */
     z-index: 999;
     background: #fff;
+    border-bottom: 1px solid rgba(0, 45, 95, 0.6);
 }
 
 .header .inner {
@@ -56,7 +55,7 @@ section {}
     font-size: 25px;
 }
 
-/* ㅡㅡㅡㅡㅡsection 1 main 슬라이드ㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 1 main 슬라이드ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 .main_visual {
     position: relative;
 }
@@ -97,14 +96,13 @@ section {}
 
 .main_visual .slick-dots {
     position: absolute;
-    bottom: 150px;
+    bottom: 100px;
     left: 50%;
     transform: translate(-50%, 0);
 }
 
 .main_visual .slick-dots {
     text-align: center;
-    margin: 20px 0 0 0;
 
 }
 
@@ -114,13 +112,13 @@ section {}
 }
 
 .main_visual .slick-dots li button {
-    background: rgba(0, 44, 95, 0.8);
-    color: rgba(255, 255, 255,0);
+    background: rgba(0, 44, 95, 0.9);
+    color: rgba(255, 255, 255, 0);
     border-radius: 1px;
-    padding: 3px;
+    padding: 2px;
     font-size: 10px;
     width: 50px;
-    height: 4px;
+    height: 2px;
     border: none;
     outline: none;
 }
@@ -179,7 +177,7 @@ section {}
 }
 
 .main_visual .main_slide .slogan a {
-    float: right;
+    /* float: right; */
     display: inline-block;
     background: #002c5f;
     color: #fff;
@@ -187,7 +185,7 @@ section {}
 }
 
 
-/* ㅡㅡㅡㅡㅡㅡsection 2 제품 슬라이드ㅡㅡㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 2 제품 슬라이드ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 .product_visual {
     position: relative;
     background: url(../images/car-bg-w.jpg) no-repeat center center/cover;
@@ -207,7 +205,7 @@ section {}
     text-align: center;
     /* top: 230px;
     left: 50%; */
-    padding: 0;
+    padding: 0px;
 }
 
 
@@ -219,8 +217,13 @@ section {}
 }
 
 .product_visual .slogan p {
-    font-size: 17px;
+    display: inline;
+    background: #555;
+    padding: 6px 10px 5px 10px;
+    margin: auto 0 0 0;
+    font-size: 15px;
     font-weight: 300;
+    color: #fff;
 }
 
 .product_visual figure .car {
@@ -247,8 +250,7 @@ section {}
 
 .product_slide .slick-dots {
     text-align: center;
-    margin: 20px 0 0 0;
-    bottom: 150px;
+    bottom: 100px;
 }
 
 .product_slide .slick-dots>* {
@@ -257,13 +259,13 @@ section {}
 }
 
 .product_slide .slick-dots button {
-    background: rgba(0, 45, 95,0.8);
+    background: rgba(0, 45, 95, 0.8);
     color: rgba(255, 255, 255, 0);
     border-radius: 1px;
-    padding: 3px;
+    padding: 2px;
     font-size: 10px;
     width: 50px;
-    height: 4px;
+    height: 2px;
     border: none;
     outline: none;
 }
@@ -275,7 +277,7 @@ section {}
 
 
 
-/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 3 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+/*ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 3 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
 .bg00 {
     filter: grayscale(0.5);
     height: 400px;
@@ -286,16 +288,22 @@ section {}
     background-attachment: fixed;
 }
 
+.bg00 .inner {
+    position: relative;
+}
+
 .bg00 .inner h2 {
+    position: absolute;
+    top: -18px;
+    display: inline-block;
     color: #fff;
-    font-size: 95px;
-    font-weight: 100;
+    font-size: 120px;
+    font-weight: 400;
 }
 
 .content {
     justify-content: center;
-    height: 100vh;
-    padding: 250px 0 0 0;
+    padding: 100px 0;
     background: #fff;
 }
 
@@ -386,10 +394,11 @@ section {}
 
 
 
-/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 4ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 4ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
 
-.bg00 {
-    filter: grayscale(0.5);
+.bg01 {
+
+    filter: grayscale(1);
     height: 400px;
     background-image: url(../images/background01.jpg);
     background-repeat: no-repeat;
@@ -397,6 +406,7 @@ section {}
     background-size: cover;
     background-attachment: fixed;
 }
+
 
 /* .bg00 .inner h2{
     color: #fff;
@@ -417,6 +427,9 @@ section {}
 
 /* 위로 올라가는 버튼 */
 .to_top {
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    ;
+    border-radius: 50%;
     position: fixed;
     bottom: 100px;
     right: 100px;
@@ -434,45 +447,30 @@ section {}
 
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡ section 5 ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
-
 .main_event {
-    height: 100vh;
-    
+    padding: 100px 0;
 }
 
 .tit {
     text-align: center;
-    padding: 130px 0 30px 0;
 }
 
 .tit h2 {
     font-size: 40px;
     font-weight: 800;
     color: #002c5f;
-    margin: 0 0 30px 0;
+    margin: 0 0 25px 0;
 }
 
 .tit p {
-    font-size: 16px;
+    margin: 0 0 20px 0;
+    font-size: 17px;
     font-weight: 300;
 }
 
 .event {
     position: relative;
-    padding: 30px 0 50px 0;
 }
-
-.sc07 .inner>li::before {
-    content: attr(data-title);
-    position: absolute;
-    top: -30px;
-    left: -30px;
-    background: tomato;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
 
 
 .sc07 .inner {
@@ -489,37 +487,66 @@ section {}
     padding: 0 15px;
 }
 
-.sc07 .inner h2 {
-    margin: 0 0 15px 0;  
-}
-/* 테두리 안 됨 */
-.sc07 .inner h2 .cover::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        display: block;
-        width: 0%;
-        height: 0%;
-    
-        border-top: 1px solid rgb(12, 76, 163);
-        border-left: 1px solid #0c4ca3;
-    
-        visibility: hidden;
-    
-        transition: 0.5s;
+/* ㅡㅡㅡㅡㅡㅡ가상요소 선ㅡㅡㅡㅡㅡㅡ */
+.sc07 .list {
+    position: relative;
 }
 
-.sc07 .inner h2 .cover:hover::before{
+.sc07 .list .cover {
+    position: relative;
+}
+
+.sc07 .list .cover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 0%;
+    border-top: 2px solid rgba(12, 76, 163, 0.8);
+    border-left: 2px solid rgba(12, 76, 163, 0.8);
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+.sc07 .list .cover:hover::before {
     width: 100%;
     height: 100%;
 
     visibility: visible;
 }
 
-    
+.sc07 .list .cover:hover::after {
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+.sc07 .list .cover::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0%;
+    border-bottom: 2px solid rgba(12, 76, 163, 0.8);
+    border-right: 2px solid rgba(12, 76, 163, 0.8);
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+
+.sc07 .inner h2 {
+    margin: 0 0 15px 0;
+}
+
+
 
 .sc07 .inner h3 {
+    padding: 0 15px;
     margin: 0 0 15px 0;
     font-size: 20px;
     font-weight: 700;
@@ -527,6 +554,8 @@ section {}
 }
 
 .sc07 .inner p {
+    padding: 0 15px;
+    margin: 0 0 30px 0;
     font-size: 15px;
     font-weight: 400;
     text-align: center;
@@ -567,4 +596,55 @@ section {}
     width: 100%;
     height: 250px;
     background: url(../images/event06.jpg) no-repeat center center/cover;
+}
+
+
+/* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ footer ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
+
+.footer {
+    width: 100%;
+    border-top: 1px solid #002c5f;
+    background-color: #002c5f;
+    padding: 50px 0 30px 0;
+}
+
+.footer .inner .footer-message>ul {
+    display: flex;
+    gap: 40px;
+}
+
+.footer .inner .footer-message>ul>li {
+    position: relative;
+}
+
+.footer .inner .footer-message>ul>li~li::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    width: 1px;
+    height: 12px;
+    background: #ddd;
+    transform: translate(-50%, -50%);
+}
+
+.footer-message {
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.footer-contact {
+    font-weight: 300;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 0 15px 0;
+}
+
+.footer-copyright {
+    font-weight: 300;
+    font-size: 11px;
+    color: #fff;
+    margin: 0 0 15px 0;
 }
