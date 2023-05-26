@@ -599,9 +599,22 @@ body {
 
 .footer {
     width: 100%;
+
     border-top: 1px solid #002c5f;
     background-color: #002c5f;
     padding: 50px 0 30px 0;
+}
+
+.footer .inner {
+    display: flex;
+}
+
+.footer .inner .footer_logo {
+    padding: 0 50px 0 0;
+}
+
+.footer .inner .footer_direction {
+    flex-direction: column;
 }
 
 .footer .inner .footer-message>ul {
@@ -625,8 +638,8 @@ body {
 }
 
 .footer-message {
-    font-weight: 400;
-    font-size: 15px;
+    font-weight: 500;
+    font-size: 14px;
     color: #fff;
     margin: 0 0 15px 0;
 }
