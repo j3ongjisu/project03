@@ -44,11 +44,11 @@ body {
 
 
 .header .search {
-    margin: 0 0 0 10px;
+    margin: 0 5px 0 5px;
 }
 
 .header .search i {
-    font-size: 25px;
+    font-size: 27px;
 }
 
 /* ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡsection 1 main 슬라이드ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ */
@@ -208,7 +208,7 @@ body {
 .product_visual .product_slide .car_tit .slogan h2 {
     font-size: 40px;
     font-weight: 800;
-    margin: 0 0 20px 0;
+    padding: 30px 0;
     color: #002c5f;
 }
 
